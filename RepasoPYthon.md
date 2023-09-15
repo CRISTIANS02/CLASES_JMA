@@ -118,10 +118,49 @@ alumno={
 }
  alumnos=[{},{},{}]
 ```
+## CONTROLES DEN FLUJO
+### DECISIONES
+Solo se ejecuta el codigo si cumple la condicion es verdadera,  podemas hacer si la condicion sea falsa se ejeute otro codigo.
 
+**SINTAXIS**
 
+Primero especificar el codigo que ejecutara si cumple una condicion
+```PYTHON
+if <condicion>:
+    ## El codigo que deseamos ejecutar si la condicion es verdad
+    print('Ejecuta esto')
+## Aqui estamos fuera del if o del si este codigo siemprese ejecutara no depende del if
+print('Esto siempre ejecutara')
+#---------------------------------------------------------------------
+# Si queremos que se ejecute un codigo en caso sea falso
+if <condicion falsa>:
+    print('Solo imprime si es verdad')
+else:
+    print('Solo imprime si es falso')
+```
+**EJEMPLITO**
 
-
-## FUNCIONES
+```PYTHON
+if 15>18:
+        print('Solo imprime si es verdad')
+else:
+    print('Solo imprime si es falso')
+    
+```
+```PYTHON
+if 15*2==30:
+        print('Solo imprime si es verdad')
+else:
+    print('Solo imprime si es falso')
+    
+```
+```PYTHON
+condicion= True
+if  condicion:
+        print('Solo imprime si es verdad')
+else:
+    print('Solo imprime si es falso')
+    
+```
 
 ## ESTRUCTURAS DE FLUJO
