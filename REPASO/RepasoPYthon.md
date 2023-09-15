@@ -138,7 +138,7 @@ if <condicion falsa>:
 else:
     print('Solo imprime si es falso')
 ```
-**EJEMPLITO**
+**EJEMPLITOS**
 
 ```PYTHON
 if 15>18:
@@ -162,5 +162,40 @@ else:
     print('Solo imprime si es falso')
     
 ```
+
+
+
+## CICLOS
+**EXISTEN  DOS TIPOS**
+
+* Cuando sabemos la cantidad de veses que vamos a repetir algo.
+Para este caso existe el **FOR**. Sintaxis despues de la palabra reservada **FOR**  deberemos crear una variable que almacene el numero que iremos intentando.luego tendremos que indicar el rango a intentar a los elementos a intentar.
+```PYTHON
+for i in range(1,5):
+    print(i)
+```
+```PYTHON
+vocales=['a','e','i','o','u']
+for i in vocales:
+    print (i)
+```
+```PYTHON
+numeros=['45','12','78','1','2']
+for i in numeros:
+    print (i)
+```
+
+
+* Cuando no sabesmos la cantidad de veses que vamos a repetir algo.
+
+
+
+
+
+
+
+
+
+
 
 ## ESTRUCTURAS DE FLUJO
