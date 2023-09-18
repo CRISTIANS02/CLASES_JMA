@@ -199,12 +199,31 @@ while condicion:
    condicion False
 ```
 
+## FUNCIONES
+**Existen dos funciones**
+1. Propias de lenguaje
+   
+   Que ya vienen creadas ye insertadas en **PYTHON**  y estan listas para ser usadas
+
+   *Estructura de uso de una funcion*
+    
+    tiene el nombre seguido de parentises
+    dentro de paretisis ódemos pasarle datos que nesesita la funcion para ejecutarse
+    . Esta funcion que nos sirve para  para mostar por consola de datos.
+```PYTHON
+print ('hola')
+```
+**LEN**
+
+Esta funcion nos permite saber la longuitud de una lista o un strung **LEN** nos debuelve un numero
+```PYTHON
+print (len([1,5,6,7,8]))
+```
+Es una funcion que se detiene a esperar que el usuario introdusca informacion
+Entre parentisis podemos escribir un mensaje que indique la accion que realizara el usuario.
+```PYTHON
+input
+```
 
 
-
-
-
-
-
-
-## ESTRUCTURAS DE FLUJO
+1. Funciones creadas

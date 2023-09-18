@@ -42,23 +42,34 @@
 # NOM_CLIENT1=input ('Ingrese su nombre: ')
 # for _ in range(6):
 
-for n in range (1,6):
-        nombre=input('Ingrese  un nombre: ')
-        print(f'ingresaste {n} veses el nombre: ')
+# for n in range (1,6):
+#         nombre=input('Ingrese  un nombre: ')
+#         print(f'ingresaste {n} veses el nombre: ')
 
 
-nombres = {}
+# nombres = {}
 
-for _ in range(5):
-    nombre = input("Ingrese un nombre: ")
-    if nombre in nombres:
-        nombres[nombre] += 1
-    else:
-        nombres[nombre] = 1
+# for _ in range(5):
+#     nombre = input("Ingrese un nombre: ")
+#     if nombre in nombres:
+#         nombres[nombre] += 1
+#     else:
+#         nombres[nombre] = 1
 
-for nombre, cantidad in nombres.items():
-    print(f"El nombre {nombre} fue ingresado {cantidad} veces.")
+# for nombre, cantidad in nombres.items():
+#     print(f"El nombre {nombre} fue ingresado {cantidad} veces.")
 
 
 #crear un programa que pida el numero y lo evalue con el numero premiado, si el numero ingresado es el premiado el programa finalizara 
 # si el numero ingresado es incorrecto el programa segira pediendo el numeropremiado
+
+nombre =input('Ingrese su nombre: ')
+numero_premiado = 1234
+
+while True:
+    numero = int(input("Ingrese un número: "))
+    if numero == numero_premiado:
+        print( nombre + "¡Felicidades! Has ingresado el número premiado.")
+        break
+    else:
+        print(f"{nombre} Número incorrecto. Sigue intentando.")
