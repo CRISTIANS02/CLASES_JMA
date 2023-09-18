@@ -189,6 +189,15 @@ for i in numeros:
 * Cuando no sabesmos la cantidad de veses que vamos a repetir algo.
 
 
+ **WHILE**
+```PYTHON
+condicion= true
+while condicion:
+   print('hola')
+   texto=input('Ingresa un nombre o salir para salir del programa: ')
+   if true texto=='salir' :
+   condicion False
+```
 
 
 
