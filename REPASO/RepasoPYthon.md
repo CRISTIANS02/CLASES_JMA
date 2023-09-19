@@ -219,11 +219,196 @@ Esta funcion nos permite saber la longuitud de una lista o un strung **LEN** nos
 ```PYTHON
 print (len([1,5,6,7,8]))
 ```
+**INPUT**
+
 Es una funcion que se detiene a esperar que el usuario introdusca informacion
 Entre parentisis podemos escribir un mensaje que indique la accion que realizara el usuario.
 ```PYTHON
-input
+input('INGRESA INGRESA: ')
+```
+**MAX**
+Esta funcion nos muestra el numero mayor de una lista 
+```python
+lista [45,12,78,9,6,12]
+numero_mayor=max(lista)
+print( numero_mayor)
+```
+**MIN**
+
+Esta funcion nos muestra el numero mENOR de una lista 
+```python
+lista [45,12,78,9,6,12]
+numero_menor=min(lista)
+print( numero_menor)
+```
+**STRING**
+
+Funcion para combertir una string a un numero entero
+```python
+numero_string='100'
+print(type(numero_string))
+numero_entero=int(numero_string
+print(type(numero_entero)))
+```
+```python
+int ('100') # → 100 es un nujmero entero
+```
+Funcion para combertir un entyero a un string
+```python
+str ('100') # → 100 es un numerostring
+```
+**APPEND**
+
+Funcion que nos permite agregar elementos al final de una lista
+```python
+lista=[15,12,78]
+elemento=100
+lista.append(elemento)
+print (lista)
+```
+**POP**
+
+Funcion de pythpn que nos permite eliminar los elementos que se encuentra al final de la lista
+```python
+lista=[15,12,78]
+lista.pop(elemento)
+print(lista)
+```
+
+**INSERT**
+
+Funcion de python que nos permiteagregar elementos en cualquier posiscion de mi lista para eso se le tiene que pasar dos parametros, primero indicarles el indice y segundo el dato qye se va agregar
+```python
+lista_nombre['feli','nando','nadine','bichota']
+lista_nombre.insert(1,'satanas')
+print(lista_nombre)}
+```
+**REMOVE**
+
+Funcion de python que nos permite eliminar elemenos de cualquier posiscion de una lista, esta funcion resibe solo elemento que deseamos eliminar.
+```python
+lista=[4,5,6,7,8,9]
+lista.remove(6)
+print(lista)
+
+
+```
+**SPLIT**
+
+
+Funcion que nos permite dividir una lista una cadena
+
+```python
+cadena='hola como estan'
+lista=cadena.split()
+print(lista)
+url='www.google.com/id=70133573'
+id=url.split('=').pop()
+print(id)
 ```
 
 
-1. Funciones creadas
+
+2. Funciones creadas
+     
+   Una funcion son mimi programas tambien se les conose como modulos mo fragmentos de codigo de uso exclusivo
+
+   **FUNCIONES PROPIAS**
+
+   PASOSPARA CREARA UNA FUNCION PROPIA*
+
+    1. Hacer uso de la palabra reservada    **DEF**
+    2. Defenir un nombre de funcion que describa que tarea va realizar
+    3. Establecer los parametros qe revisara la funcion entre parentisis().
+    4. Establecer que valor o dato retornara mi funcion con la palabra reservada **return**
+   **OBSERVACION**: Tambien  podemos hacer uso de la funcion **print** para retomar un mensaje en nuestra funcion.
+   Existen dos tipos de funciones los que que no reciven ningun parametro
+   *Ylos que reciben  parametros*
+   ```python
+   def saludo():
+    print('hola este es un saludo')
+
+   ```
+  *Caomo hacemos la funcion?*
+  *nombre de la funcion y parentisis*
+
+   **FUNCION CON PATAMETROS**
+   ```PYTHON
+   def mi_print(texto):
+    print(texto)
+    print('Hola este es un print de python')
+    print('Hola este es mi print creado')
+   ```
+
+
+   PASOSPARA CREARA UNA FUNCION PROPIA*
+
+ 1. Hacer uso de la palabra reservada    **DEF**
+ 2. Defenir un nombre de funcion que describa que tarea va realizar
+ 3. Establecer los parametros qe revisara la funcion entre parentisis().
+ 4. Establecer que valor o dato retornara mi funcion con la palabra reservada **return**
+   **OBSERVACION**: Tambien  podemos hacer uso de la funcion **print** para retomar un mensaje en nuestra funcion.
+   Existen dos tipos de funciones los que que no reciven ningun parametro
+   *Ylos que reciben  parametros*
+   ```python
+   def saludo():
+    print('hola este es un saludo')
+
+   ```
+  *Caomo hacemos la funcion?*
+  *nombre de la funcion y parentisis*
+
+   **FUNCION CON PATAMETROS**
+   ```PYTHON
+   def mi_print(texto):
+    print(texto)
+    print('Hola este es un print de python')
+    print('Hola este es mi print creado')
+   ```
+
+
+```python
+def suma(a,b):
+    total=a+b
+    return total
+mi_print(suma(45,12)) ## →................. 57
+ 
+```
+
+
+
+**EJEMPLO**
+
+Parra que se usa esta funcion?
+para mostrar el valor maximo de una lista
+
+```python
+lista=[12,4,45,78,3,1]
+mi_print(max(lista)) ## →................78
+
+def mi_max(lista):
+    numero_mayor=lista[0]
+    for numero in lista:
+       if numero > numero_mayor
+        numero_mayor=numnero
+    return numero_mayor
+mi_print(mi_max(lista))
+    
+```
+Parra que se usa esta funcion?
+para mostrar el valor minimo de una lista
+
+```python
+lista=[12,4,45,78,3,1]
+mi_print(min(lista)) ## →................78
+
+def mi_min(lista):
+    numero_menor=lista[0]
+    for numero in lista:
+       if numero < numero_menor
+        numero_menor=numnero
+    return numero_menor
+mi_print(mi_min(lista))
+    
+```
+
