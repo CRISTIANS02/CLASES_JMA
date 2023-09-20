@@ -74,55 +74,113 @@
 #     else:
 #         print(f"{nombre} Número incorrecto. Sigue intentando.")
 
-
+# ejercicio n°
 
 # crear una funcion por cada operacion aritmetico que resiva dos parametros y  retorne el resultado de la operacion. OJO.
 # crearse una funcion que nos permita imprimir el resultado
 
 
-## DATA
+# ## DATA
 
-num1=int(input('INGRESE EL PRIMER NUMERO :'))
-num2=int(input('INGRESE EL SEGUNDO  NUMERO :'))
-## SUMA
+# num1=int(input('INGRESE EL PRIMER NUMERO :'))
+# num2=int(input('INGRESE EL SEGUNDO  NUMERO :'))
+# ## SUMA
 
-def suma(num1,num2):
-    total=num1+num2
-    return total
-#print(suma(num1,num2)) 
+# def suma(num1,num2):
+#     total=num1+num2
+#     return total
+# #print(suma(num1,num2)) 
  
-## RESTA
-def resta(num1,num2):
-    total=num1-num2
-    return total
-#print(resta(num1,num2)) 
+# ## RESTA
+# def resta(num1,num2):
+#     total=num1-num2
+#     return total
+# #print(resta(num1,num2)) 
 
-## MULTIPLICAR
-def multi(num1,num2):
-    total=num1*num2
-    return total
-#print(multi(num1,num2))
-
-
-## DIVICION
-def dividir(num1,num2):
-    total=num1/num2
-    return total
-#print(dividir(num1,num2))
+# ## MULTIPLICAR
+# def multi(num1,num2):
+#     total=num1*num2
+#     return total
+# #print(multi(num1,num2))
 
 
-# Realizar la suma
-resultado_suma = suma(num1, num2)
-print(resultado_suma)
+# ## DIVICION
+# def dividir(num1,num2):
+#     total=num1/num2
+#     return total
+# #print(dividir(num1,num2))
 
-# Realizar la resta
-resultado_resta = resta(num1, num2)
-print(resultado_resta)
 
-# Realizar la multiplicación
-resultado_multiplicacion = multi(num1, num2)
-print(resultado_multiplicacion)
+# # Realizar la suma
+# resultado_suma = suma(num1, num2)
+# print(resultado_suma)
 
-# Realizar la división
-resultado_division = dividir(num1, num2)
-print(resultado_division)
+# # Realizar la resta
+# resultado_resta = resta(num1, num2)
+# print(resultado_resta)
+
+# # Realizar la multiplicación
+# resultado_multiplicacion = multi(num1, num2)
+# print(resultado_multiplicacion)
+
+# # Realizar la división
+# resultado_division = dividir(num1, num2)
+# print(resultado_division)
+
+
+
+
+# ejercicion°
+
+# escribe una funcion que reciba un numero entero posisivo y devuelva su faactorial
+
+
+    
+
+# def factorial(n):
+#     if n < 0:
+#         return "El número debe ser positivo."
+#     elif n == 0 or n == 1:
+#         return 1
+#     else:
+#         resultado = 1
+#         for i in range(2, n+1):
+#             resultado *= i
+#         return resultado
+    
+
+
+# numero = int(input('INGRESE EL NUMERO PARA EVALUAR LA POTENCIA: '))
+# resultado_factorial = factorial(numero)
+# print("El factorial de", numero, "es:", resultado_factorial)
+
+## escribir una funcion que resiba com parametros una lista de numeros y retorne 
+# una nueva lista con el cuadro de cada numero de la lista ingresada.
+
+# def obtener_cuadrados(lista):
+#     cuadrados = [num ** 2 for num in lista]
+#     return cuadrados
+
+# # Ejemplo de uso:
+# numeros = [1, 2, 3, 4, 5]
+# lista_cuadrados = obtener_cuadrados(numeros)
+# print(lista_cuadrados)
+
+
+## Escribir un programa que reciba una cadena de caracteres y debuelva un objeto con cada palabra que contiene y su frecuencia
+def contar_frecuencia_palabras(cadena):
+    frecuencia_palabras = {}
+    palabras = cadena.split()
+
+    for palabra in palabras:
+        if palabra in frecuencia_palabras:
+            frecuencia_palabras[palabra] += 1
+        else:
+            frecuencia_palabras[palabra] = 1
+
+    return frecuencia_palabras
+
+# Ejemplo de uso:
+cadena = "Hola mundo, hola de nuevo"
+resultado = contar_frecuencia_palabras(cadena)
+print(resultado)

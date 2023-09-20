@@ -90,3 +90,5 @@ pow(5,-2)
 
 ```
 
+## TAREA 2
+**AVERIGUAR SOBRE ENTORNOS DE PYTHON**
