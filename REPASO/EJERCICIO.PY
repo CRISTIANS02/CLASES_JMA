@@ -63,13 +63,66 @@
 #crear un programa que pida el numero y lo evalue con el numero premiado, si el numero ingresado es el premiado el programa finalizara 
 # si el numero ingresado es incorrecto el programa segira pediendo el numeropremiado
 
-nombre =input('Ingrese su nombre: ')
-numero_premiado = 1234
+# nombre =input('Ingrese su nombre: ')
+# numero_premiado = 1234
 
-while True:
-    numero = int(input("Ingrese un número: "))
-    if numero == numero_premiado:
-        print( nombre + "¡Felicidades! Has ingresado el número premiado.")
-        break
-    else:
-        print(f"{nombre} Número incorrecto. Sigue intentando.")
+# while True:
+#     numero = int(input("Ingrese un número: "))
+#     if numero == numero_premiado:
+#         print( nombre + "¡Felicidades! Has ingresado el número premiado.")
+#         break
+#     else:
+#         print(f"{nombre} Número incorrecto. Sigue intentando.")
+
+
+
+# crear una funcion por cada operacion aritmetico que resiva dos parametros y  retorne el resultado de la operacion. OJO.
+# crearse una funcion que nos permita imprimir el resultado
+
+
+## DATA
+
+num1=int(input('INGRESE EL PRIMER NUMERO :'))
+num2=int(input('INGRESE EL SEGUNDO  NUMERO :'))
+## SUMA
+
+def suma(num1,num2):
+    total=num1+num2
+    return total
+#print(suma(num1,num2)) 
+ 
+## RESTA
+def resta(num1,num2):
+    total=num1-num2
+    return total
+#print(resta(num1,num2)) 
+
+## MULTIPLICAR
+def multi(num1,num2):
+    total=num1*num2
+    return total
+#print(multi(num1,num2))
+
+
+## DIVICION
+def dividir(num1,num2):
+    total=num1/num2
+    return total
+#print(dividir(num1,num2))
+
+
+# Realizar la suma
+resultado_suma = suma(num1, num2)
+print(resultado_suma)
+
+# Realizar la resta
+resultado_resta = resta(num1, num2)
+print(resultado_resta)
+
+# Realizar la multiplicación
+resultado_multiplicacion = multi(num1, num2)
+print(resultado_multiplicacion)
+
+# Realizar la división
+resultado_division = dividir(num1, num2)
+print(resultado_division)
