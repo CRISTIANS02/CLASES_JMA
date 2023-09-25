@@ -42,7 +42,7 @@ else:
 NOM_CLIENT1=input ('Ingrese su nombre: ')
 for _ in range(6):
 
-for n in range (1,6):
+    for n in range (1,6):
         nombre=input('Ingrese  un nombre: ')
         print(f'ingresaste {n} veses el nombre: ')
 
@@ -160,8 +160,6 @@ print("El factorial de", numero, "es:", resultado_factorial)
 def obtener_cuadrados(lista):
     cuadrados = [num ** 2 for num in lista]
     return cuadrados
-
-# Ejemplo de uso:
 numeros = [1, 2, 3, 4, 5]
 lista_cuadrados = obtener_cuadrados(numeros)
 print(lista_cuadrados)
@@ -179,8 +177,6 @@ def contar_frecuencia_palabras(cadena):
             frecuencia_palabras[palabra] = 1
 
     return frecuencia_palabras
-
-# Ejemplo de uso:
-cadena = "Hola mundo, hola de nuevo"
+cadena = "clased, nuevo curso"
 resultado = contar_frecuencia_palabras(cadena)
 print(resultado)

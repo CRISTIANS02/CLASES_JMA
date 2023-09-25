@@ -144,6 +144,7 @@ lsvirtualenv
 ```
 
 **Activar un entorno**
+
 Antes de utilizar el entorno, debes activarlo:
 
 ```PYTHON
@@ -155,6 +156,7 @@ Esto asegura que solo se usen los paquetes bajo *my-env/.*
 Notarás que el nombre del entorno se muestra a la izquierda de la línea de comandos. De esta forma puedes ver cuál es el entorno activo.
 
 **Instalar paquetes**
+
 Puede instalar paquetes uno por uno o configurando un archivo *requirements.txt* para tu proyecto.
 
 ```PYTHON
@@ -170,6 +172,7 @@ pip freeze > requirements.txt
 El archivo contendrá la lista de todos los paquetes instalados en el entorno actual y sus respectivas versiones. Esto te ayudará a lanzar tu proyecto con sus propios módulos dependientes.
 
 **Desactivar un entorno**
+
 Si has terminado de trabajar con el entorno virtual, puedes desactivarlo con:
 
 ```PYTHON
@@ -179,9 +182,11 @@ deactivate
 Esto te devuelve al intérprete de Python predeterminado del sistema con todas sus bibliotecas instaladas.
 
 **Eliminar un entorno**
+
 Simplemente elimina la carpeta del entorno.
 
 **Conda**
+
 *Conda* es una gestión de paquetes, dependencias y entornos para muchos lenguajes, incluido Python.
 
 Para instalar Conda, sigue estas instrucciones.
@@ -200,7 +205,8 @@ También puedes especificar con qué versión de Python quieres trabajar:
 conda create --name my-env python=3.6
 ```
 
-**Lista de entornos**
+**Lista de entornos**.
+
 Puedes enumerar los entornos disponibles con:
 
 ```PYTHON
@@ -208,6 +214,7 @@ conda info --envs
 ```
 
 **Activar un entorno**
+
 Antes de utilizar el entorno, debes activarlo:
 ```PYTHON
 source activate my-env
@@ -215,9 +222,11 @@ source activate my-env
 
 
 **Instalar paquetes**
+
 Igual que con *virtualenv.*
 
 **Desactivar un entorno**
+
 Si has terminado de trabajar con el entorno virtual, puedes desactivarlo con:
 
 ```PYTHON
@@ -225,6 +234,7 @@ source deactivate
 ```
 
 **Eliminar un entorno**
+
 Si quieres eliminar un entorno de Conda, utiliza:
 
 ```PYTHON
