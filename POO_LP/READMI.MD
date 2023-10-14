@@ -10,6 +10,7 @@ Es un paradigma de programacion
 se basa en Objetos y en la **POO** un objeto es toda identidad que se puede escribir atravez de **atributos**
  y **funciones** que puede realizar  la edintidad
 
+# ATRIBUTOS DE CLASE Y ATRIBUTOS DE INSTANCIA
  **EJEMPLOS N°1**
 ```PYTHON
 # 1  celulares
