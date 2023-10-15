@@ -1,14 +1,27 @@
 import tkinter as tk
 
-def create_square(color):
-    square = tk.Canvas(root, width=150, height=108, bg=color)
-    square.pack(side=tk.LEFT, padx=5)
-
 root = tk.Tk()
 
-colors = ["red", "blue", "green", "yellow", "orange", "purple"]
+# primer cuadro azul
+for i in range(1):
+    cuadro = tk.Canvas(root, width=50, height=50, bg='blue')
+    cuadro.grid(row=0, column=0)
+# segundo cuadro azul
+    
+for i in range(1):
+    cuadro = tk.Canvas(root, width=50, height=50, bg='orange')
+    cuadro.grid(row=0, column=1)
+# tercer rectángulo verde 
+rectangulo_verde = tk.Canvas(root, width=100, height=300, bg='green')
+rectangulo_verde.grid(row=1, column=i, columnspan=2)
 
-for color in colors:
-    create_square(color)
+# cuarto rectángulo rojo 
+rectangulo_rojo = tk.Canvas(root, width=100, height=50, bg='red')
+rectangulo_rojo.grid(row=2, column=i, columnspan=2)
+
+# quintt 4 cuadros rojos 
+for i in range(4):
+    cuadro = tk.Canvas(root, width=50, height=50, bg='red')
+    cuadro.grid(row=3, column=i)
 
 root.mainloop()
