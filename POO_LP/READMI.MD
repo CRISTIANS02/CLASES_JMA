@@ -42,5 +42,36 @@ llamandoNadine=Celular('SM','A526B','95874125896','963258741') # instanciando mi
 print(llamandoNadine.marca)
 print(llamandojory.familia)
 print(llamandoNadine.llamar('china'))
-    
 ```
+
+
+# tarea
+## crear una lista con 10 objetos que obtenga los adatos de las tiendas comerciales
+>ejemplo:
+>
+```python
+tiendas=[{
+    'ruc': '589632147582,
+    'nombre':'el pichilon',
+    'categoria':['abarrotes', 'bodega']
+    'horario_atencion':{
+        'dia_atencion':7am-12m,
+        'tardes':2pm-8pm
+    }
+    'gerente''manuel'
+}]
+```
+
+## observacion:
+ 'las categorias sera 4: abarrotes,farmacia.bodega,restaurant'
+ ## observacion: 
+ 'los gerentes solo podran ser los siguientes: edwin,china,crhistian,nadine'
+
+
+ # realizar los siguientes ejercicios
+ # crear la clase para tiendas que tenga los siguientes metodoso uso de caso
+ 1. crear un metodo que me filtre las tiendas que tiene cada gerente
+ 2. crear un metodo que me muestre los negocios que tienen mas de dos categorias
+ 3. crear un metodo que me muestre solo el nombre y ruc de las tiendas.
+ 4. 
+
