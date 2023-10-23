@@ -14,7 +14,7 @@ def evaluar_login():
     if text_usuario==usuario and text_contraseña==contraseña:
         mensaje = Label(ventana, text="BIENVENIDO AL MUNDO DE TODOS")
     else:
-        mensaje = Label(ventana, text="LARGATE AL INFIERNO")
+        mensaje = Label(ventana, text="ALERTA FBI")
     mensaje.pack()
     
 
