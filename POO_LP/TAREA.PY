@@ -25,6 +25,10 @@
 # Ejemplo de uso
 
 
+
+
+
+
 class Tienda:
     def __init__(self, ruc, nombre, categorias, horario_atencion, gerente):
         self.ruc = ruc
