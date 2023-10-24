@@ -25,6 +25,26 @@
 # Ejemplo de uso
 from bd import *
 class Tiendas2023:
+
+    def filtrar_por_gerente(self, gerente):
+        tiendas_gerente = []
+        for tienda in tiendas:
+            if tienda['gerente'] == gerente:
+                tiendas_gerente.append(tienda)
+        return tiendas_gerente
+
+    def negocios_con_mas_categorias(self):
+        negocios = []
+        for tienda in tiendas:
+            if len(tienda['categoria']) > 2:
+                negocios.append(tienda)
+        return negocios
+
+    def mostrar_nombre_ruc(self):
+        info_tiendas = []
+        for tienda in tiendas:
+            info_tiendas.append({'nombre': tienda['nombre'], 'ruc': tienda['ruc']})
+        return info_tiendas
     
     def tienda_gerente(self,bd_tiendas,nom_gerente):
         tiendita=list(filter(lambda el:el['gerente']==nom_gerente,bd_tiendas))
@@ -42,7 +62,7 @@ class Tiendas2023:
         
     def eliminar_negocio(self,bd_tiendas,ruc):
         tiendita=list(filter(lambda el:el['ruc']!=ruc,bd_tiendas))
-        return tiendita.index
+        return tiendita
         
     # tarea #
     #def actualizar_negocio(sefl.bd_tiendita,ruc,clave,valor):
@@ -62,9 +82,9 @@ class Tiendas2023:
   
    
 gerente=Tiendas2023()
-print(gerente.tienda_gerente(tiendas,'china'))
-print(gerente.negocios_con_mas_categorias(tiendas))
-print(gerente.mostrar_nombre_ruc(tiendas))
+# print(gerente.tienda_gerente(tiendas,'china'))
+# print(gerente.negocios_con_mas_categorias(tiendas))
+# print(gerente.mostrar_nombre_ruc(tiendas))
 print(gerente.eliminar_negocio(tiendas,12345678901))
 
 
