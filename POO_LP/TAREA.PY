@@ -45,7 +45,7 @@ class Tiendas2023:
         return tiendita.index
         
     # tarea 
-    def actualizar_negocio(sefl):
+    def actualizar_negocio(sefl.bd_tiendita):
         pass
     
     # otro metodo para crear un nuevo producto
