@@ -44,9 +44,10 @@ class Tiendas2023:
         tiendita=list(filter(lambda el:el['ruc']!=ruc,bd_tiendas))
         return tiendita.index
         
-    # tarea 
-    def actualizar_negocio(sefl.bd_tiendita):
-        pass
+    # tarea #
+    #def actualizar_negocio(sefl.bd_tiendita,ruc,clave,valor):
+       # tiendita=list()
+        
     
     # otro metodo para crear un nuevo producto
     
