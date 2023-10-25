@@ -1,5 +1,5 @@
-   
-tiendas = [
+
+negocios = [
 #tienda → 1
     {  
         'ruc': '10714504431',
