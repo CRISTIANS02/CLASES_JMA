@@ -20,69 +20,56 @@
 # 1.actualizar edad del usuario
 # 2.verificar si el usuario esta registrado o existe en mis registros
 # 3.validar usuario y pasword
+from bdd import * # la variable usuario estara disponible en este archivo
 
-#1
-import datetime
-import random
+class Usuario:
 
-usuarios = []
+    # def __init__(self,dni,nombre, fecha_nacimiento,edad,usuario,password):
+    #     self.dni=dni
+    #     self.nombre=nombre
+    #     self.fecha_nacimiento=fecha_nacimiento
+    #     self.edad=edad
+    #     self.usuario=usuario
+    #     self.password=password
+    
+    def edad(self):
+        pass #hoy=
+    
+    def actualizar_edad(self,clave,valor):
+        for user in usuarios:
+            if user['dni']== self.dni:
+                user[clave]= valor
+        return 'actualizado'
+        
 
-for i in range(5):
-  usuarios.append({
-    'dni': random.randint(10000000,99999999),
-    'nombre': 'Usuario ' + str(i+1),
-    'f_nacimiento': str(datetime.date(random.randint(1950,2005), random.randint(1,12), random.randint(1,28))),
-    'edad': '',
-    'usuario': random.randint(100000,999999),
-    'password': 'password'+str(i)
-  })
+    def ver_usuario(self,dato):
+        g=list(filter(lambda par:par['dni']==dato,usuarios))
+        return f'''Ainformacion por dni {dato}
+        ...
+        {g}'''
+    def verificar_user(self,usuario_buscar):
+        for user in usuarios:
+            if user['usuario'] == usuario_buscar:
+                return 'Usuario si existe.'
+        return 'Usuario resgistrado.'
 
-print(usuarios)
+    def validar(self, usuario, password):
+        for user in usuarios:
+            if user['usuario']==usuario:
+                if user['password']==password:
+                    return 'Datos validados'
+        return 'Datos invalidos'
+        
+        pass
+b=Usuario(75248698,'Maria','10/02/2005','','maria@gmail.com','m1234')
+# metodo que sabiendo la fecha de nacimiento me va generar la edad
+# crear clase para usuario, debera tener los siguientes metodos
+# actualizar edad del usuario
+# verificar si usuario esta registrado o existe en mis registros
+# validar usuario y password
 
-# 1. Actualizar edades
-from datetime import datetime
-for usuario in usuarios:
-  fecha_nac = datetime.strptime(usuario['f_nacimiento'], '%Y-%m-%d')
-  usuario['edad'] = int((datetime.now() - fecha_nac).days / 365) 
-
-print(usuarios)
-
-# 2. Verificar si usuario existe
-dni_buscar = usuarios[3]['dni']  
-print(any(u['dni'] == dni_buscar for u in usuarios))
-
-# 3. Validar usuario y contraseña
-user_validar = usuarios[4]['usuario']
-pass_validar = usuarios[4]['password']
-print(any(u['usuario'] == user_validar and u['password'] == pass_validar for u in usuarios))
-
-
-
-
-
-
-
-#2
-
-
-
-
-
-# # actualizacion de edad
-
-# from datetime import *
-# from bdd import *
-# for usuario in usuarios:
-#   fecha_nac = datetime.strptime(usuario['f_nacimiento'], '%d/%m/%Y')
-#   usuario['edad'] = int((datetime.now() - fecha_nac).days / 365)
-
-# print(usuarios)
-
-# # Verificar usuario existente
-# dni_buscar = 12345678
-# print(any(u['dni'] == dni_buscar for u in usuarios))
-
-# # Validar usuario y contraseña
-# dni_validar = 98765432 
-# password_validar = 'qwerty123'
-# #print(any(u['dni'] == dni_validar and u['password'] == password_validar for u in usuarios))
+print(b.actualizar_edad('edad','17'))
+print(b.actualizar_edad(75248698,'edad',''))
+print(b.validar('maria@gmail.com','m1234'))
+print(b.ver_usuario(75248698))
+print(b.verificar_user('maria@gmail.com'))
