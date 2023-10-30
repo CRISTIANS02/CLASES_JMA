@@ -1,7 +1,7 @@
 from tkinter import *
 
 ventana = Tk()
-ventana.geometry("350x400")
+ventana.geometry()
 ventana.title('INICIAR SECION')
 
 def evaluar_login():

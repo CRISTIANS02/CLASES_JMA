@@ -12,7 +12,7 @@ Widget_uno.config(width='400',height='100')
 
 # creacion de etiquetas
 etiqieta=Label(ventanita,text='ingresa su nombre: ')
-etiqieta.grid(row=1,column=0)
+etiqieta.grid(row=0,column=0)
 
 #creacion de cuadro de texto
 cuadro_texto=Entry(ventanita,bg='green')
