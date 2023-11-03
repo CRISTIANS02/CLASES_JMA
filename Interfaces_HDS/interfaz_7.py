@@ -16,7 +16,7 @@ num1 = Entry(ventanita)
 num1.grid(row=2, column=0) 
 # SEGUNDO CUADRO
 etiqueta3= Label(ventanita, text='INGRESAR SEGUNDO NUMERO:').grid(row=3, column=0)
-num2 = Entry(ventanita)
+num2= Entry(ventanita)
 num2.grid(row=4, column=0)
  # TERCER CUADRO
 etiqueta4 = Label(ventanita, text='RESULTADO:').grid(row=5, column=0)
@@ -64,8 +64,9 @@ def calcular():
 
 
  #   OPCION CALCULAR
-botonCalcular = Button(ventanita, text="Calcular", command=calcular)
-botonCalcular.grid(row=8, column=0)
+boton_Calcular = Button(ventanita, text="Calcular", command=calcular)
+boton_Calcular.grid(row=8, column=0)
+
 #  OPERACION PARA LIMPIAR
 def limpiar():
   num1.delete(0,END)

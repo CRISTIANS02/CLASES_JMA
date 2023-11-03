@@ -5,12 +5,12 @@
 
 usuarios = [
 {
-        'dni':75248698,
-        'nombre':'Maria',
-        'fecha_nacimiento':'10/02/2005',
+        'dni':71450443,
+        'nombre':'cristian',
+        'f_nacimiento':'02/05/2000',
         'edad':'',
-        'usuario':'maria@gmail.com',
-        'password':'m1234'
+        'usuario':'cris02',
+        'password':'71450443'
 },
 {
         'dni':78945612,
@@ -43,46 +43,7 @@ usuarios = [
         'edad':'',
         'usuario':'cris@gmail.com',
         'password':'2345'
-},
-{
-        'dni':76984352,
-        'nombre':'',
-        'fecha_nacimiento':'11/01/2002',
-        'edad':'',
-        'usuario':'bela@gmail.com',
-        'password':'l98765'
-},
-{
-        'dni':75236956,
-        'nombre':'',
-        'fecha_nacimiento':'07/03/2003',
-        'edad':'',
-        'usuario':'lulu@gmail.com',
-        'password':'mk987'
-},
-{
-        'dni':76325846,
-        'nombre':'',
-        'fecha_nacimiento':'09/02/2004',
-        'edad':'',
-        'usuario':'Name@gmail.com',
-        'password':'poo23'
-},
-{
-        'dni':796845412,
-        'nombre':'',
-        'fecha_nacimiento':'15/05/1999',
-        'edad':'',
-        'usuario':'kim@gmail.com',
-        'password':'ki56'
-},
-{
-        'dni':79562148,
-        'nombre':'',
-        'fecha_nacimiento':'10/08/2000',
-        'edad':'',
-        'usuario':'roma@gmail.com',
-        'password':'6543'
 }
+
 ]
 #print(usuarios)

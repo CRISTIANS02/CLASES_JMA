@@ -19,25 +19,22 @@
 
 # 1.actualizar edad del usuario
 # 2.verificar si el usuario esta registrado o existe en mis registros
-# 3.validar usuario y pasword
-import bdd
-
-class Usuario:
-  def _init_(self, dni, nombre, f_nacimiento, edad,usuario, password):
+# 3.validar usuario y paswor
+class usuario:
+    def _init_(self, dni, nombre, f_nacimiento, edad,usuario, password):
         self.dni=dni
         self.nombre=nombre
         self.f_nacimiento=f_nacimiento
         self.edad=edad
         self.usuario=usuario
         self.password=password
-
-  def mostrar_usuario(self, ide):
-        resultado=list(filter(lambda par:par['dni']==ide,usuarios))
-        return f'''Aqui tienes informacion de la usuario que buscaste:
-        .............................................................................................................................................................................. 
-        {resultado}'''
-    
-    def agregar_edad(self, clave, valor):
+        
+    def mostrarUsuario(self,ide):
+        respuesta=list(filter(lambda par:par['dni']==ide,usuarios))
+        return f"""INFORMACION DEL USUARIO VALIDO"""
+        {respuesta}
+        
+    def agregarEdad (self,clave,valor):
         for usuario in usuarios:
             if usuario['dni'] == self.dni:
                 usuario[clave] = valor
@@ -58,15 +55,8 @@ class Usuario:
                 return 'Usuario y contraseña válidos.'
         return 'Usuario o contraseña incorrectos.'
 
-actu=Usuario(71439102,"cristian","11/04/2004",None,"admin","xd")
-print(actu.agregar_edad("edad", 17))
-print(actu.mostrar_usuario(71439102))
-
-usuario_a_buscar = "asta"
-print(actu.verificar_usuario(usuario_a_buscar))
-print(actu.mostrar_usuario(71439102))
-
-usuario_a_validar = "asta"
-password_a_validar = "xd"
-print(actu.validar_usuario_password(usuario_a_validar, password_a_validar))
-print(actu.mostrar_usuario(71439102))
+actu=Usuario(71440443,"cristian","02/54/2000",None,"","2000")
+print(actu.agregar_edad("edad", 23))
+print(actu.mostrar_usuario(71450443))
+    
+     
