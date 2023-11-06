@@ -52,7 +52,7 @@ boton_multi.grid(row=4, column=3)
 boton_divi = Button(ventana, text="/", width=5, height=2, command=lambda: realizar_operacion("/"))
 boton_divi.grid(row=5, column=3)
 boton_igual = Button(ventana, text="=", width=5, height=2, command=lambda: realizar_operacion("="))
-boton_igual.grid(row=5, column=1, columnspan=2)
+boton_igual.grid(row=5, column=1, columnspan=3)
 
 # Botón borrar abajo
 def borrar():
