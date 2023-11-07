@@ -42,6 +42,6 @@ boton_menos=Button(root,text="-",width=9,height=3,bg="deep sky blue",fg="black",
 boton_multiplicacion=Button(root,text="x",width=9,height=3,bg="deep sky blue",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:operacion("*",pantalla)).grid(row=3,column=3,padx=1,pady=1)
 boton_dividir=Button(root,text="/",width=9,height=3,bg="deep sky blue",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:operacion("/",pantalla)).grid(row=4,column=3,padx=1,pady=1)
 # boton limpiar
-boton_limpiar=Button(root,text="DELETE",width=9,height=3,bg="deep sky blue",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,comand=lambda:limpiar(pantalla)).grid(row=5,column=0,columnspan=4,padx=4,pady=1,sticky=W+E)
+boton_limpiar=Button(root,text="Limpiar",width=9,height=3,bg="green",fg="black",borderwidth=0,cursor="hand2",font=fuente_general,command=lambda:limpiar(pantalla)).grid(row=5,column=0,columnspan=4,padx=4,pady=1,sticky=W+E)
 
 root.mainloop()
