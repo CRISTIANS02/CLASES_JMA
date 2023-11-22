@@ -1,6 +1,7 @@
 import datetime
-COLOR_FONDO_PRIMARIO="#004d4d"
+COLOR_FONDO_PRIMARIO="#90EE90"
 COLOR_FONDO_SECUNDARIO="#b3daff"
+#COLOR_FONDO_TERCEARIO="FFF8DC"
 COLOR_BOTON="#52c9dc"
 TITULO_APP="App de Contactos"
 date=datetime.datetime.now()
