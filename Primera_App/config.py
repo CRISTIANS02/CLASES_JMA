@@ -1,8 +1,8 @@
 import datetime
-COLOR_FONDO_PRIMARIO="#90EE90"
-COLOR_FONDO_SECUNDARIO="#b3daff"
+COLOR_FONDO_PRIMARIO="#00CED1"
+COLOR_FONDO_SECUNDARIO="#90EE90"
 #COLOR_FONDO_TERCEARIO="FFF8DC"
-COLOR_BOTON="#52c9dc"
+COLOR_BOTON="#008000"
 TITULO_APP="App de Contactos"
 date=datetime.datetime.now()
 HORA_ACTUAL=f"fecha: {date.day}-{date.month}-{date.year}, hora: {date.hour}:{date.minute}"
